@@ -3,6 +3,11 @@ import json
 from urllib.request import urlopen
 
 ip = input('-> Coloque o ip que deseja acessar\n-> ')
+
+if ip == '':
+    print("-> ERROR\n-> Informe um IP")
+    exit()
+
 print("Iniciando busca..{}".format(ip))
 file = 'infos.json'
 
@@ -39,5 +44,5 @@ try:
 
 except:
     print("************************")
-    print("error")
+    print("-> ERROR")
     print("************************")
