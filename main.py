@@ -32,7 +32,7 @@ try:
         dados = json.load(my_json)
         find_dados = dados
 
-    lat =  find_dados['lat'] 
+    lat = find_dados['lat'] 
     lon = find_dados['lon'] 
 
     print("---------------------------------------------------")
